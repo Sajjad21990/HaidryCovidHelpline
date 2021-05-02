@@ -58,7 +58,7 @@ export default function Home({ bedsData }) {
   );
 }
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   const result = await fetch(`http://localhost:3000/api/beds/get-data`);
   const data = await result.json();
 
