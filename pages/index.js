@@ -8,6 +8,7 @@ import Features from "../components/Features";
 import BedsTable from "../components/BedsTable";
 import BackToTop from "../components/BackToTop";
 import CovidTracker from "../components/CovidTracker";
+import EmergencyBanner from "../components/EmergencyBanner";
 
 export default function Home({ bedsData }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -52,7 +53,9 @@ export default function Home({ bedsData }) {
       </div>
       <Features />
       <BedsTable data={bedsData} />
+      <EmergencyBanner />
       <CovidTracker />
+
       <BackToTop />
     </div>
   );
@@ -62,6 +65,7 @@ export async function getServerSideProps(context) {
   const result = await fetch(
     `https://haidery-covid-helpline.vercel.app/api/beds/get-data`
   );
+  // const result = await fetch(`http://localhost:3000/api/beds/get-data`);
   const data = await result.json();
 
   return {

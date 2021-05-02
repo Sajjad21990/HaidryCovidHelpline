@@ -3,6 +3,7 @@ import React from "react";
 const BedsTable = ({ data }) => {
   return (
     <div className="py-12 bg-white" id="beds-table">
+      {console.log(data)}
       <hr />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
         <div className="lg:text-center">
@@ -47,6 +48,18 @@ const BedsTable = ({ data }) => {
                         scope="col"
                         className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
                       >
+                        ICU Beds
+                      </th>
+                      <th
+                        scope="col"
+                        className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      >
+                        Non ICU Beds
+                      </th>
+                      <th
+                        scope="col"
+                        className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      >
                         Emergency Contact
                       </th>
                     </tr>
@@ -83,6 +96,28 @@ const BedsTable = ({ data }) => {
                             {d.vacant === 0
                               ? "Unavailable"
                               : `Available - ${d.vacant}`}
+                          </span>
+                        </td>
+                        <td className="px-6 py-4 whitespace-nowrap ">
+                          <span
+                            className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${
+                              d.ICUvacant === 0
+                                ? "bg-red-100 text-red-800"
+                                : "bg-blue-100 text-blue-800"
+                            }`}
+                          >
+                            {d.ICUvacant === 0 ? "0" : `${d.ICUvacant}`}
+                          </span>
+                        </td>
+                        <td className="px-6 py-4 whitespace-nowrap ">
+                          <span
+                            className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${
+                              d.NONICUvacant === 0
+                                ? "bg-red-100 text-red-800"
+                                : "bg-blue-100 text-blue-800"
+                            }`}
+                          >
+                            {d.NONICUvacant === 0 ? "0" : `${d.NONICUvacant}`}
                           </span>
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">

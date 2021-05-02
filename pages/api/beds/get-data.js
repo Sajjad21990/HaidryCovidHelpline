@@ -32,6 +32,8 @@ export default async (req, response) => {
             data[z / 5]["capacity"] = parseInt(arr[z]);
             data[z / 5]["occupied"] = parseInt(arr[z + 1]);
             data[z / 5]["vacant"] = parseInt(arr[z + 2]);
+            data[z / 5]["ICUvacant"] = parseInt(arr[z + 3]);
+            data[z / 5]["NONICUvacant"] = parseInt(arr[z + 4]);
           }
           return response.status(200).json({
             source: "https://www.covidbedmbmc.in/HospitalInfo/show",
