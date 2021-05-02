@@ -3,7 +3,6 @@ import React from "react";
 const BedsTable = ({ data }) => {
   return (
     <div className="py-12 bg-white" id="beds-table">
-      {console.log(data)}
       <hr />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
         <div className="lg:text-center">

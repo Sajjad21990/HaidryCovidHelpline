@@ -55,7 +55,6 @@ export default function Home({ bedsData }) {
       <BedsTable data={bedsData} />
       <EmergencyBanner />
       <CovidTracker />
-
       <BackToTop />
     </div>
   );
