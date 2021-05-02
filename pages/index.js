@@ -59,7 +59,9 @@ export default function Home({ bedsData }) {
 }
 
 export async function getServerSideProps(context) {
-  const result = await fetch(`http://localhost:3000/api/beds/get-data`);
+  const result = await fetch(
+    `https://haidery-covid-helpline.vercel.app/api/beds/get-data`
+  );
   const data = await result.json();
 
   return {
