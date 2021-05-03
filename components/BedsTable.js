@@ -13,9 +13,8 @@ const BedsTable = ({ data }) => {
             Mira-Bhayander Beds Availability
           </p>
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-            impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis
-            ratione.
+            Given Below are the List of Hospital beds available as per the MBMC
+            website. This is the offical data provided by MBMC.
           </p>
         </div>
         <div className="flex flex-col mt-12">

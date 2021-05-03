@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import EmergencyCard from "../components/EmergencyCard";
-import Navbar from "../components/Navbar";
+
+import NavbarEmergency from "../components/NavbarEmergency";
 import {
   oxygenSuppliersData,
   plasmaDonorData,
@@ -14,10 +15,15 @@ import {
 } from "../data";
 
 const EmergencyContact = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
       <div className="bg-gray-50">
-        <Navbar />
+        <NavbarEmergency
+          isOpen={isOpen}
+          hanldeOpen={() => setIsOpen(true)}
+          handleClose={() => setIsOpen(false)}
+        />
         <div className="max-w-7xl mx-auto py-12 px-4">
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl text-center">
             <span className="block">Emergency Contact and</span>

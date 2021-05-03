@@ -1,8 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { Link as SmoothLink } from "react-scroll";
 
-const Navbar = ({ isOpen, hanldeOpen, handleClose }) => {
+const NavbarEmergency = ({ isOpen, hanldeOpen, handleClose }) => {
   return (
     <div>
       <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
@@ -55,31 +54,6 @@ const Navbar = ({ isOpen, hanldeOpen, handleClose }) => {
               className="font-medium text-gray-500 hover:text-gray-900 cursor-pointer"
             >
               Home
-            </Link>
-
-            <SmoothLink
-              to="beds-table"
-              smooth
-              duration={1000}
-              className="font-medium text-gray-500 hover:text-gray-900  cursor-pointer"
-            >
-              Beds Availability
-            </SmoothLink>
-
-            <SmoothLink
-              to="covid-table"
-              smooth
-              duration={1000}
-              className="font-medium text-gray-500 hover:text-gray-900  cursor-pointer"
-            >
-              Cases Tracker
-            </SmoothLink>
-
-            <Link
-              href="/emergency-contact"
-              className="font-medium text-gray-500 hover:text-gray-900  cursor-pointer"
-            >
-              Emergency Helpline
             </Link>
           </div>
         </nav>
@@ -134,32 +108,8 @@ const Navbar = ({ isOpen, hanldeOpen, handleClose }) => {
             </div>
             <div className="px-2 pt-2 pb-3 space-y-1">
               <Link href="/">
-                <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                <a className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100">
                   Home
-                </a>
-              </Link>
-
-              <SmoothLink
-                to="beds-table"
-                smooth
-                duration={1000}
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-              >
-                Beds Availability
-              </SmoothLink>
-
-              <SmoothLink
-                to="covid-table"
-                smooth
-                duration={1000}
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-              >
-                Cases Tracker
-              </SmoothLink>
-
-              <Link href="/emergency-contact">
-                <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-                  Emergency Helpline
                 </a>
               </Link>
             </div>
@@ -170,4 +120,4 @@ const Navbar = ({ isOpen, hanldeOpen, handleClose }) => {
   );
 };
 
-export default Navbar;
+export default NavbarEmergency;

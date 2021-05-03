@@ -68,7 +68,12 @@ export const RTPCRdata = [];
 
 export const doctorsData = [];
 
-export const hearseVanNumbers = [];
+export const hearseVanNumbers = [
+  {
+    name: "Hearse Van",
+    numbers: [919224288999],
+  },
+];
 
 export const kabrastanNumbers = [];
 
