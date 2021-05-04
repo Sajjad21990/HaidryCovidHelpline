@@ -28,9 +28,57 @@ export const oxygenSuppliersData = [
     name: "Malbar hill sewak jatha",
     numbers: [9987511755, 9892229049, 9833224206, 9867984360],
   },
+  {
+    name: "SANA MASJID SIDDIQUI BHAI",
+    numbers: [+919702799666],
+  },
+  {
+    name: "BILAL MASJID NAEEM ANSARI",
+    numbers: [+919702823191],
+  },
+  {
+    name: "ABU HURAIRA MASJID KANUNGO ESTATE QUAZI QUADIR SIR",
+    numbers: [8097780177],
+  },
+  {
+    name: "TABELE WALI MASJID P SHAFIQ BHAI ",
+    numbers: [+919819150955],
+  },
+  {
+    name: "Masjid-E-Ikhlas - Ubaid Fruitwala",
+    numbers: [9820022008],
+  },
+  {
+    name: "Masjid-E-Ikhlas - Sohail Penwala ",
+    numbers: [8169148842],
+  },
+  {
+    name: "Unttan incharge - Kishor Ghosh ",
+    numbers: [7738253442],
+  },
+  {
+    name: "Unttan incharge - Anita Ghosh ",
+    numbers: [8828452075],
+  },
+  {
+    name: "Umar masjid - Kashif azmi",
+    numbers: [7021333137],
+  },
+  {
+    name: "Umar masjid - Babar",
+    numbers: [9323825421],
+  },
+  {
+    name: "Umar masjid - Karim Chacha",
+    numbers: [7506190304],
+  },
 ];
 
 export const plasmaDonorData = [
+  {
+    name: "http://www.mirabhayandermumbai.com/",
+    numbers: [7977986891],
+  },
   {
     name: "Vaibhav",
     numbers: [9224495144],

@@ -41,7 +41,8 @@ const EmergencyContact = () => {
         cardData={bloodDonors}
         title="Need of blood (Non-Plasma)"
       />
-      <EmergencyCard cardData={RTPCRdata} title="RT-PCR centers and costing" />;
+      <EmergencyCard cardData={RTPCRdata} title="RT-PCR centers and CT scans" />
+      ;
       <EmergencyCard
         cardData={RemFDAInspectorsData}
         title="Remdesivir FDA inspector number"
