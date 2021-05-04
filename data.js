@@ -58,6 +58,10 @@ export const ambulanceData = [
     name: "Saifee Ambulance",
     numbers: [+912223466520, +912223471189],
   },
+  {
+    name: "Aamir Tase",
+    numbers: [8655366080],
+  },
 ];
 
 export const bloodDonors = [];

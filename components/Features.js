@@ -45,9 +45,7 @@ const Features = () => {
                 </p>
               </dt>
               <dd className="mt-2 ml-16 text-base text-gray-500">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Maiores impedit perferendis suscipit eaque, iste dolor
-                cupiditate blanditiis ratione.
+                Find all vaccine related information here.
               </dd>
             </div>
 
