@@ -127,6 +127,89 @@ export const RTPCRdata = [
 
 export const doctorsData = [];
 
+export const vaccineData = [
+  {
+    name: "P. Bhimsen Joshi Hospital",
+    metaData: [
+      "Near Maxis Mall, Bhayandar (W)",
+      "Covishield - 1st & 2nd Dose (9am to 4pm)",
+      "Covaxin - 2nd Dose (9am to 4pm)",
+      "18 to 44yrs Covishield 1st dose (11am to 4pm)",
+    ],
+  },
+  {
+    name: "B. Indira Gandhi Hospital",
+    metaData: [
+      "Near Poonam Sagar Complex, Mira Road (E)",
+      "Covishield - 1st & 2nd Dose (9am to 4pm)",
+      "Covaxin - 2nd Dose (9am to 4pm)",
+    ],
+  },
+  {
+    name: "Ideal Park Health Post",
+    metaData: [
+      "Deepak Hospital Road, opp Seven Square School, Mira Road (E)",
+      "Covishield - 1st & 2nd Dose (9am to 4pm)",
+    ],
+  },
+  {
+    name: "Morva Sub Center (Tuesday, Thursday, Saturday, Sunday)",
+    metaData: [
+      "Uttan Road, Morva Municipal School, Bhayander (W)",
+      "Covishield - 1st & 2nd Dose (9am to 4pm)",
+    ],
+  },
+  {
+    name: "Vinayak Nagar Health Center",
+    metaData: [
+      "Near Vinayak Temple, Bhayander (W)",
+      "Covishield - 1st & 2nd Dose (9am to 4pm)",
+    ],
+  },
+  {
+    name: "Bandarwadi Health Center",
+    metaData: [
+      "Near Bus Stand, Bhayander (E)",
+      "Covishield - 1st & 2nd Dose (9am to 4pm)",
+    ],
+  },
+  {
+    name: "Penkarpada Health Center",
+    metaData: [
+      "Penkarpada Municipal School",
+      "Covishield - 1st & 2nd Dose (9am to 4pm)",
+    ],
+  },
+  {
+    name: "Miraroad Health Center",
+    metaData: [
+      "Next to Wockhardt Hospital, Mira Road (E)",
+      "Covishield - 1st & 2nd Dose (9am to 4pm)",
+    ],
+  },
+  {
+    name: "Uttan Health Center",
+    metaData: [
+      "Chikhal Pada, Uttan",
+      "Covishield - 1st & 2nd Dose (9am to 4pm)",
+    ],
+  },
+  {
+    name: "Kashigaon Health Center",
+    metaData: [
+      "Kashigaon Municipal School",
+      "Covishield - 1st & 2nd Dose (9am to 4pm)",
+    ],
+  },
+  {
+    name: "Navghar Health Center",
+    metaData: [
+      "Navghar Municipal School",
+      "Covishield - 1st & 2nd Dose (9am to 4pm)",
+    ],
+  },
+];
+
 export const hearseVanNumbers = [
   {
     name: "Hearse Van",

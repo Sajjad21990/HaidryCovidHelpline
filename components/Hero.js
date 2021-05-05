@@ -1,5 +1,6 @@
 import React from "react";
-import { Link, Link as SmoothLink } from "react-scroll";
+import Link from "next/link";
+import { Link as SmoothLink } from "react-scroll";
 
 const Hero = () => {
   return (
@@ -39,9 +40,9 @@ const Hero = () => {
             </SmoothLink>
           </div>
           <div className="mt-3 sm:mt-0 sm:ml-3">
-            <Link href="/">
+            <Link href="/emergency-contact">
               <a className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10">
-                Track Cases
+                Emergency Numbers
               </a>
             </Link>
           </div>

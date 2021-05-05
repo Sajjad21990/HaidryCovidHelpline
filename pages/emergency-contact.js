@@ -11,8 +11,10 @@ import {
   RemFDAInspectorsData,
   hearseVanNumbers,
   kabrastanNumbers,
+  vaccineData,
   otherHelpfulNumbers,
 } from "../data";
+import VaccineCard from "../components/RTPCRCard";
 
 const EmergencyContact = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,6 +37,7 @@ const EmergencyContact = () => {
         cardData={oxygenSuppliersData}
         title="Oxygen Cylinder Suppliers"
       />
+      <VaccineCard cardData={vaccineData} title="Vaccine Centers" />
       <EmergencyCard cardData={plasmaDonorData} title="Donate Your Plasma" />
       <EmergencyCard cardData={ambulanceData} title="Ambulance numbers" />;
       <EmergencyCard
@@ -42,15 +45,7 @@ const EmergencyContact = () => {
         title="Need of blood (Non-Plasma)"
       />
       <EmergencyCard cardData={RTPCRdata} title="RT-PCR centers and CT scans" />
-      {/* <EmergencyCard
-        cardData={RemFDAInspectorsData}
-        title="Remdesivir FDA inspector number"
-      /> */}
       <EmergencyCard cardData={hearseVanNumbers} title="Hearse Van Numbers" />
-      {/* <EmergencyCard
-        cardData={kabrastanNumbers}
-        title="Kabrastan MGMT numbers"
-      /> */}
       <EmergencyCard
         cardData={otherHelpfulNumbers}
         title="Other helpline numbers"
