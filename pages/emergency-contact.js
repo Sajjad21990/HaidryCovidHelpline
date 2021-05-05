@@ -42,16 +42,15 @@ const EmergencyContact = () => {
         title="Need of blood (Non-Plasma)"
       />
       <EmergencyCard cardData={RTPCRdata} title="RT-PCR centers and CT scans" />
-      ;
-      <EmergencyCard
+      {/* <EmergencyCard
         cardData={RemFDAInspectorsData}
         title="Remdesivir FDA inspector number"
-      />
-      <EmergencyCard cardData={hearseVanNumbers} title="Hearse Van Numbers" />;
-      <EmergencyCard
+      /> */}
+      <EmergencyCard cardData={hearseVanNumbers} title="Hearse Van Numbers" />
+      {/* <EmergencyCard
         cardData={kabrastanNumbers}
         title="Kabrastan MGMT numbers"
-      />
+      /> */}
       <EmergencyCard
         cardData={otherHelpfulNumbers}
         title="Other helpline numbers"

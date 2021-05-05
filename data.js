@@ -5,7 +5,7 @@ export const oxygenSuppliersData = [
   },
   {
     name: "Anfaal Foundation",
-    numbers: [7700014515, 9820676033, 7385110110],
+    numbers: [7700014515],
   },
   {
     name: "IAR Foundation",
@@ -91,10 +91,7 @@ export const plasmaDonorData = [
     name: "Nishant",
     numbers: [9022127965],
   },
-  {
-    name: "Datta",
-    numbers: [8108347477],
-  },
+
   {
     name: "Rajesh",
     numbers: [8108602299],
@@ -112,11 +109,21 @@ export const ambulanceData = [
   },
 ];
 
-export const bloodDonors = [];
+export const bloodDonors = [
+  {
+    name: "Roshan Pathology",
+    numbers: [8451840439],
+  },
+];
 
 export const RemFDAInspectorsData = [];
 
-export const RTPCRdata = [];
+export const RTPCRdata = [
+  {
+    name: "Haidery Covid Helpline",
+    numbers: [9167014017, 8452814017],
+  },
+];
 
 export const doctorsData = [];
 
