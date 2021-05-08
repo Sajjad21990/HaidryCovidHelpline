@@ -5,4 +5,5 @@ module.exports = withPWA({
     dest: "public",
     swSrc: "service-worker.js",
   },
+  target: "serverless",
 });
