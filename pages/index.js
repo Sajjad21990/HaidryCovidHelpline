@@ -9,6 +9,7 @@ import BackToTop from "../components/BackToTop";
 import CovidTracker from "../components/CovidTracker";
 import EmergencyBanner from "../components/EmergencyBanner";
 import Disclaimer from "../components/Disclaimer";
+import Carousel from "../components/Carousel";
 
 export default function Home({ bedsData }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,34 +18,7 @@ export default function Home({ bedsData }) {
     <div className="">
       <Head lang="en">
         <title>Haidery Covid Helpline</title>
-        <meta name="description" content="Haidery Covid Helpline" />
-        <meta name="description" content="Haidery Covid Helpline" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:title"
-          content="Volunteer driven, crowdsourced tracker for Covid19 cases in Mira-Bhayander area"
-        />
-        <meta
-          property="og:description"
-          content="This website provides you the information about Hospital beds, Oxygen Cylinders to the needy ones at right time."
-        />
-        <meta
-          property="og:url"
-          content="https://haiderycovidhelpline.netlify.app/"
-        />
-        <meta property="og:site_name" content="Haidery Covid Helpline" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Haidery Covid Helpline" />
-        <meta
-          name="twitter:description"
-          content="This website provides you the information about Hospital beds, Oxygen Cylinders to the needy ones at right time."
-        />
-        <meta
-          name="twitter:image"
-          content="https://haiderycovidhelpline.netlify.app/images/coronavirus.png"
-        />
-        <meta name="theme-color" content="#ee5b3e" />
+
         <link rel="icon" href="/images/coronavirus.png" />
       </Head>
 
@@ -80,6 +54,7 @@ export default function Home({ bedsData }) {
               />
             </div>
           </div>
+          {/* <Carousel /> */}
           <Features />
           <EmergencyBanner />
           <BedsTable data={bedsData} />
